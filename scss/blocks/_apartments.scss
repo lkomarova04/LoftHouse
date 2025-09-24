@@ -1,3 +1,15 @@
+.apartments {
+    position: relative;
+
+
+    &::before {
+        content:"III";
+        right: 85%;
+        transform: translate(50%, 0%);
+        @include decorNumber;
+    }
+}
+
 
 .apartments__title {
     margin-bottom: 88px;
