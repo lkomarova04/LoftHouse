@@ -11,15 +11,20 @@
 
         top: 160px;
     }
+
+    @include mediaTablet {
+        padding: 90px 0;
+    }
 }
 
 .section-map__title {
     margin-bottom: 80px;
+
+    @include mediaTablet {
+        margin-bottom: 44px;
+    }
 }
 
-.section-map__map {
-
-}
 
 .map {
     height: 358px;

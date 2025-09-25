@@ -51,19 +51,21 @@
 .card__title {
     position: absolute;
     z-index: 9;
-    left: 50px;
+    left: 40px;
     right: 20px;
     bottom: 44px;
     font-size: 24px;
 
-    &:hover {
-        color: $white;
+    @include mediaTablet {
+        font-size: 20px;
+        left: 30px;
+        bottom: 35px;
     }
 }
 
 
- .card:hover .card__img {
+.card:hover .card__img {
         transform: scale(1.1);
         filter: contrast(110%), brightness(1.2), saturate(1.2);
 
-    }
+}
