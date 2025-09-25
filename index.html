@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoftHouse</title>
     <link rel="stylesheet" href="./css/main.css" class="rel">
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
+
 </head>
 <body>
     <header class="header">
@@ -119,7 +121,7 @@
                 
                         <form action="" class="cta__form form">
                             <input type="text" class="form__input" placeholder="Ваше имя" autocomplete="off">
-                            <input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
+                            <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
                             <p class="form__privacy form__privacy--bottom">
                                 Мы никому не передаеи ваши данные.<br>
                                 И не сохраняем ваш номер в базу.
@@ -133,7 +135,7 @@
         <sectiion class="video">
             <div class="container">
                 <h2 class="visually-hidden">Видео про ЖК</h2>
-                <a href="#!" class="video__link">
+                <a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" data-youtubeLightbox class="video__link">
                     <img src="./img/video/play.svg" alt="" class="video__icon">
                     <img src="./img/video/video-img.jpg" alt="" class="video__img">
                 </a>
@@ -218,8 +220,22 @@
         </div>
     </footer>
 
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=cc5a8938-6d56-43a0-9a95-99bf57c7368c&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="./libs/phoneMask/mask.js"></script>
+    <script src="./libs/phoneMask/mask_list.js"></script>
+
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+
     <script src="./js/main.js"></script>
 
-    
 </body>
 </html>
